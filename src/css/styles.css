@@ -1,0 +1,103 @@
+:root {
+  --defaultBackground: url("https://live.staticflickr.com/65535/49635401403_96f9c322dc_o.jpg");
+}
+
+body>h1 {
+  text-align: center;
+}
+
+#selectBox {
+  width:80vw;
+  height:80vh;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid black;
+  border-radius: 20px;
+
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.menu>button {
+  width: 20vw;
+  height:20vh;
+  border: 5px solid black;
+  border-radius: 20px;
+  margin-bottom:15px;
+}
+
+.menu>button:hover {
+  position: relative;
+  top:-5px;
+  left:-5px;
+  box-shadow: 5px 5px black;
+}
+
+.menu>button:active {
+  position: relative;
+  top:-2px;
+  left:-2px;
+  box-shadow: 2px 2px black;
+}
+
+#infoBox {
+  position: relative;
+  width:80vw;
+  height:80vh;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid black;
+  border-radius: 20px;
+  color: white;
+  background-image: var(--defaultBackground);
+  background-size: cover;
+  overflow-x:hidden;
+}
+
+
+
+#infoBox>.linkbox {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding:10px;
+}
+
+#infoBox>.linkbox>* {
+  border:2px solid black;
+}
+
+.textBlack {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: 800;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#error {
+  display: none;
+}
+
+#buttonDiv {
+  display: flex;
+}
+
+#buttonDiv>button {
+  margin: 15px auto 0px auto;
+  padding: 5px 40px;
+  display: none;
+}
+
+.infoSplit {
+  display: flex;
+  align-content: center;
+}
+
+.infoSplit>div {
+  width:40vw;
+}
